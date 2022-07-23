@@ -12,7 +12,7 @@ function PageTransition(){
       this.className += ' active-btn';   //"this" here is reffering to this function and it doesnt exit in an arrow function "=>" so instead we put function()
     })
   }
-  //Section Active
+  //Section Active class
   allSections.addEventListener('click',(e)=>{
       const id = e.target.dataset.id;
       if(id){
@@ -25,7 +25,7 @@ function PageTransition(){
         section.forEach((section)=>{
           section.classList.remove('active')
         })
-        const element = document.getElementById(id) //ids about porfolio blogs contact in the html file
+        const element = document.getElementById(id) //ids for about ,porfolio, blogs ,contact in the html file
         element.classList.add('active');
       }
   })
